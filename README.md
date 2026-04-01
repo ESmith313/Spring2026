@@ -95,3 +95,14 @@ This repository was created for LIS624 during the 2026 Spring semester. It will 
  - Documentation played an important role in understanding how the system works. While working with PHP and SQL, it was often necessary to refer to documentation and examples to understand how to properly structure code and queries.
  - In some cases, the provided materials did not fully explain certain steps, so additional resources and troubleshooting were needed. This included looking up syntax, reviewing examples, and testing different approaches to fix errors.
  - Using documentation and external resources helped fill in gaps in understanding and made it possible to complete the assignment successfully.
+
+---
+# OPAC
+**Link:** http://34.9.67.253/opac.php
+
+# Cataloging Module
+**Link:** http://34.9.67.253/cataloging/index.html
+
+# Login Credentials
+**Username:** libcat
+**Password:** password123
