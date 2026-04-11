@@ -103,6 +103,8 @@ This repository was created for LIS624 during the 2026 Spring semester. It will 
 # Cataloging Module
 **Link:** http://34.9.67.253/cataloging/index.html
 
-# Login Credentials
-**Username:** libcat
-**Password:** password123
+# WordPress
+**Link:** http://34.9.67.253/wordpress/
+
+ - I encountered a few problems during WordPress installation that caused me to restart the entire process, such as my VM losing connection. While frustrating to redo the steps it also helped me understand the process better.
+   - The issue with my VM losing connection seems to be fixed now.
