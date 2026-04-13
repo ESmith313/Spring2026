@@ -62,3 +62,6 @@ This repository was created for LIS624 during the 2026 Spring semester. It will 
 
 # WordPress
 **Link:** http://34.9.67.253/wordpress/
+
+# Omeka
+**Link:** http://34.9.67.253/omeka/

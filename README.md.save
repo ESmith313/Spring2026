@@ -1,0 +1,84 @@
+# Spring2026
+This repository was created for LIS624 during the 2026 Spring semester. It will serve as the main documentation space for my work throughout the semester.
+
+**What this repository will contain:**
+ - Notes from lectures and readings.
+ - Assignment documentation.
+ - Reflections.
+
+**What has been set up:**
+ - Public GitHub repository.
+ - Added and edited this README file using Markdown.
+ - Connected GitHub to my Virtual Machine.
+
+
+## LAMP Stack Server Setup
+
+**Introduction:**
+ - A LAMP Stack consists of Linux, Apache, MySQL, and PHP. It is used to host dynamic web applications by combining a web server, database, and server-side scripting language.
+
+**Apache Installation:**
+ *sudo apt update*
+ *sudo apt install apache2 -y*
+ - I verified Apache was running using:
+ *systemctl status apache2*
+ - I then tested it was working by visiting my VM's public IP address.
+**PHP Installation:**
+ *sudo apt install php libapache2-mod-php php-mysql -y*
+ - I restarted Apache:
+ *sudo systemctl restart apache2*
+ - I confirmed PHP worked using an info.php file.
+ - Configeration Changes:
+   - I edited the Apache configeration file (dir.conf) to prioritize index.php over index.html.
+   *DirectoryIndex index.php index.html*
+ - index.php Page:
+   - I created an index.php file that detects the user's browser and operating system using PHP variables and conditional statements.
+**MySQL Installation:**
+ *sudo apt install mysql-server -y*
+ *sudo mysql_secure_installation*
+
+**I Created:**
+ - Database: opacdb
+ - User: opacuser
+ - Table: books
+
+**OPAC Page**
+ - I created opac.php, which connects to the MySQL database and displays book records from the books table.
+
+**Verification:**
+ - I accessed index.php in the browser.
+ - I accessed opac.php and confirmed database data was displayed.
+ - I checked Apache and MySQL status.
+
+**Challenges:**
+ - Other than mistyping some commands my biggest challenge was when my VM stopped working and I had to set up a new one and redo some of the coursework.
+
+# OPAC and Cataloging Module Documentation
+
+**Introduction**
+ - An Online Public Access Catalog (OPAC) is the part of a library system that allows users to search for and view materials such as books, media, and other resources. It acts as the public facing interface of a larger Integrated Library System (ILS). Instead of interacting directly with a database, users interact with the OPAC, which retrieves and displays information in a readable format.
+ - The cataloging module works on the backend of the system and is used to create and manage bibliographic records. These records include information such as titles, authors, and other details. Together, the cataloging module and the OPAC form a simple workflow where data is entered, stored in a database, and then retrieved for user searches.
+
+**Relational Database Structure**
+ - The system uses a relational database to store bibliographic records. In a relational database, data is organized into tables mode up of rows and columns. Each row represents a single record and each column represents a specific field.
+ - Each table includes a primary key, which uniquely identifies each record. This helps prevent duplicate entries and allows the systems to efficiently locate specific records. Fields are assigned data types such as 'INT' for numerical values an 'VARCHAR' for text.
+ - The OPAC interacts with this database by sending queries to retrieve records based on user input. This structure allows for efficient strorage, organization, and retrieval of information.
+
+**Step-By-Step Setup**
+ - Database Connection
+   - The system connects to the database using PHP. This requires specifying the database host, password, and database name. If any of these values are incorrect, the connection will fail and the system will not function.
+   - Once connected, PHP can send queries to the database to insert or retrieve data.
+ - Cataloging Module
+   - The cataloging module allows users to add new records to the database. It typically includes a form where users input information such as titles and authors.
+   - When the form is submitted, the data is sent to the database using an SQL 'INSERT' statement. This adds a new row to the table, making the record avaliable for retrieval in the OPAC.
+ - OPAC Search and Retrieval
+   - The OPAC allows users to search for records stored in the database. When a user enters a search term, the system sends an SQL 'SELECT' query to teh database.
+   - The database returns any matching records, which are then displayed on the page. This demonstrates how the frontend interacts with the backend.
+ - Making the System More Realistic
+   - The system created is a basic version of a library system. In real world applications, additional features would be included, such as:
+     - User accounts and authentication
+     - Circulation systems for checking items in and out
+     - Subject headings and classification systems
+     - Advanced search fucntionality
+   - Adding these features woulf make the system more similar to a full Integrated Library System.
+ - Configuration
