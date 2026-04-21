@@ -1,0 +1,8 @@
+#Insall Omeka Assignment
+
+##Overview
+ - Installing Omeka Classic and then adding a link to it on my Wordpress site helped me understand how different web tools actually work together. Since everything was running on my Google Cloud VM I had to pay attention to things like file paths, URLs, and server settings, and permissions.
+##Problem
+
+*Omeka:* http://34.9.67.253/omeka/ 
+*WordPress:* http://34.9.67.253/wordpress/index.php/lis-624/
