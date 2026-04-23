@@ -11,5 +11,5 @@
  - This assignment made it clear that systems like Koha don’t run on their own in real life. They have to share a server with other tools, which can lead to conflicts if things aren’t set up carefully. Knowing how to troubleshoot and manage these issues is really important for keeping everything running smoothly.
 
 ## Links:
- - Koha: http://34.69.80.184:8081/ 
- - WordPress: http://34.69.80.184/ 
+ - Koha: http://34.60.18.190:8081/ 
+ - WordPress: http://34.55.92.3/wordpress/ 
